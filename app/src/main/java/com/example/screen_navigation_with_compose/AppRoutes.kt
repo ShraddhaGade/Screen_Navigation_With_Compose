@@ -1,9 +1,9 @@
 package com.example.screen_navigation_with_compose
 
 sealed class AppRoutes(val route: String) {
-    object Welcome : AppRoutes("welcome")
-    object Login : AppRoutes("login")
-    object Home : AppRoutes("home")
+    data object Welcome : AppRoutes("welcome")
+    data object Login : AppRoutes("login")
+    data object Home : AppRoutes("home")
 
     fun withArgs(vararg args: String): String {
         return buildString {

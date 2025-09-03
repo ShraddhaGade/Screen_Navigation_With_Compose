@@ -13,7 +13,7 @@ import kotlinx.coroutines.delay
 @Composable
 fun WelcomeScreen(onTimeout: () -> Unit) {
     LaunchedEffect(key1 = true) {
-        delay(2000L) // Delay for 5000 milliseconds (5 seconds)
+        delay(1000L) // Delay for 1 seconds
         onTimeout() // Call the lambda to navigate
     }
 
