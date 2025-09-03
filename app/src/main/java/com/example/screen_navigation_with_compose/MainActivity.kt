@@ -24,11 +24,3 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Screen_Navigation_With_ComposeTheme {
-        Greeting("Android")
-    }
-}
